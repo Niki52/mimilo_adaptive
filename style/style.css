@@ -1,0 +1,1334 @@
+@import url(./FONT.css);
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+.container{
+    width: 1570px;
+    margin: 0 auto;
+}
+body{
+    background-image: url(../img/background.jpg);
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .container .navigation{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+header .container .img{
+    margin-left: 100px;
+}
+header .container a{
+    color: #968e87;
+    display: flex;
+    margin-right: 60px;
+    font-size: 22px;
+    font-family: "Montserrat";
+    margin-top: 40px;
+}
+header .container .logo{
+    font-family: "CormorantInfant";
+    color: #756b62;
+    font-size: 30px;
+    margin-left: 375px;
+    margin-right: 325px;
+}
+header .container .basket{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+}
+header .container .img .img_milo{
+    position: absolute;
+    margin-top: 50px;
+}
+header .container .img .img_body{
+    margin-left: 520px;
+    margin-top: 150px;
+    position: absolute;
+}
+header .container .img h1{
+    font-family: "CormorantInfant";
+    color: #756b62;
+    font-weight: 100;
+    margin-top: 400px;
+    font-size: 100px;
+    position: absolute;
+    z-index: 1;
+}
+header .container .img .img_ryka{
+    margin-top: 700px;
+    position: absolute;
+    margin-left: 210px;
+}
+header .container .img .img_logo{
+    margin-top: 800px;
+    position: absolute;
+    margin-left: 1020px;
+}
+body .container .love h1{
+    font-family: "CormorantInfant";
+    color: #968e87;
+    font-style: italic;
+    font-size: 60px;
+    margin-top: 1200px;
+    position: absolute;
+    margin-left: 150px;
+}
+body .container .love h1 span{
+    font-style: normal;
+    color: #756b62;
+}
+body .container .love .img_telo{
+    margin-top: 1150px;
+    position: absolute;
+    margin-left: 1090px;
+}
+body .container .line{
+    width: 80px;
+    height: 2px;
+    background-color: #988f87;
+    margin-right: 7px;
+    position: absolute;
+    margin-top: 1510px;
+    margin-left: 100px;
+}
+body .container .line_text{
+    font-family: "Montserrat";
+    color: #968e87;
+    font-size: 20px;
+    margin-left: 210px;
+    position: absolute;
+    margin-top: 1500px;
+}
+.wrapper {
+	height: 600px;
+	margin: 100px auto 0;
+	position: relative;
+	width: 470px;
+}
+
+.slider {
+	background-color: #dddddd00;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+}
+.wrapper > input {
+	display: none;
+}
+.slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}
+.wrapper .controls {
+	left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.wrapper label:after {
+	border: 2px solid #756b62;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4) {
+	background: #968e87;
+}
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.wrapper{
+    margin-top: 1600px;
+    position: absolute;
+    margin-left: 500px;
+}
+.wrapper p{
+    color: #756b62;
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+.wrapper .slider .sliders i{
+    margin-left: 300px;
+    size: 40px;
+}
+body .container .history .line{
+    margin-top: 2510px;
+}
+body .container .history .line_text{
+    margin-top: 2500px;
+    margin-left: 200px;
+}
+body .container .history h1{
+    margin-top: 2600px;
+    position: absolute;
+    margin-left: 100px;
+    font-family: "CormorantInfant";
+    color: #756b62;
+    font-style: italic;
+    font-size: 60px;
+}
+body .container .history p{
+    margin-top: 2800px;
+    position: absolute;
+    margin-left: 100px;
+    font-family: "CormorantInfant";
+    color: #968e87;
+    font-style: italic;
+    font-size: 30px;
+}
+body .container .history .img_ryka_milo{
+    margin-top: 2450px;
+    position: absolute;
+    margin-left: 900px;
+}
+body .container .history .img_rosa{
+    margin-top: 2740px;
+    position: absolute;
+    margin-left: 1300px;
+}
+body .container .history .img_maslo{
+    margin-top: 3100px;
+    position: absolute;
+    margin-left: 600px;
+}
+body .container .sostav p{
+    position: absolute;
+    font-family: "CormorantInfant";
+    color: #968e87;
+    font-style: italic;
+    font-size: 30px;
+}
+body .container .sostav .rostenie{
+    margin-top: 3660px;
+    margin-left: 100px;
+}
+body .container .sostav .petla{
+    margin-top: 3660px;
+    margin-left: 600px;
+}
+body .container .sostav .kniga{
+    margin-top: 3660px;
+    margin-left: 1070px;
+}
+body .container .sostav .rostenie_img{
+    margin-top: 3550px;
+    margin-left: 270px;
+    position: absolute;
+}
+body .container .sostav .petla_img{
+    margin-top: 3550px;
+    margin-left: 750px;
+    position: absolute;
+}
+body .container .sostav .kniga_img{
+    margin-top: 3550px;
+    margin-left: 1230px;
+    position: absolute;
+}
+
+body .container .sianie .fon{
+    position: absolute;
+    margin-top: 4000px;
+    font-family: "CormorantInfant";
+    color: #968e87;
+    font-size: 130px;
+    text-align: center;
+}
+body .container .sianie .lico{
+    position: absolute;
+    margin-top: 4130px;
+    margin-left: 470px;
+}
+body .container .sianie .na_lice{
+    position: absolute;
+    margin-top: 4240px;
+    margin-left: 540px;
+    font-family: "Montserrat";
+    color: #d4cbc2;
+    text-align: center;
+    font-size: 25px;
+}
+body .container .sianie button{
+    background-color: transparent;
+    border: 1px solid #d4cbc2;
+    border-radius: 30px;
+    color: #d4cbc2;
+    cursor: pointer;
+    padding: 20px 50px;
+    margin-top: 4400px;
+    margin-left: 700px;
+    position: absolute;
+    font-size: 20px;
+}
+body .container .img a{
+    margin-top: 4800px;
+    position: absolute;
+}
+body .container .img p{
+    margin-top: 4798px;
+    position: absolute;
+    font-family: "Montserrat";
+    color: #968e87;
+    font-size: 25px;
+    margin-left: 670px;
+}
+body .container .img .inst{
+    margin-left: 630px;
+}
+body .container .img .email{
+    margin-left: 930px;
+    color: #756b62;
+    font-size: 23px;
+    font-family: "Montserrat";
+    text-decoration: underline;
+}
+body .container .img .two_milo{
+    margin-top: 4900px;
+    position: absolute;
+    margin-left: -150px;
+}
+body .container .img .three_milo{
+    margin-top: 4900px;
+    position: absolute;
+    margin-left: 240px;
+}
+body .container .img .two_milo_ryka{
+    margin-top: 4900px;
+    position: absolute;
+    margin-left: 630px;
+}
+body .container .img .three_milo_odealo{
+    margin-top: 4900px;
+    position: absolute;
+    margin-left: 1020px;
+}
+body .container .img .mnogo_milo{
+    margin-top: 4900px;
+    position: absolute;
+    margin-left: 1410px;
+}
+
+footer{
+    background-image: url(../img/19.jpg);
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5500px;
+}
+.sides {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    position: relative;
+    z-index: 1;
+}
+
+.form-left h2 {
+    font-family: "CormorantInfant";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 55px;
+    color: #756b62;
+    margin-left: 200px;
+}
+
+.form-left p {
+    font-family: "CormorantInfant";
+    font-size: 24px;
+    font-style: italic;
+    color: #988f87;
+    font-weight: 500;
+    margin-left: 200px;
+}
+
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 100px;
+    margin-right: 170px;
+}
+
+.form-right__input {
+    background-color: inherit;
+    padding: 10px 70px;
+    border: none;
+    border-bottom: 1px solid #756b62;
+    margin-bottom: 20px;
+    color: #756b62;
+    font-size: 20px;
+}
+
+.type {
+    display: flex;
+}
+
+.type__input {
+    margin-right: 5px;
+    border: 1px solid #756b62;
+    cursor: pointer;
+} 
+.type__label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #756b62;
+}
+
+.type__label_p {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    color: #756b62; 
+}
+
+.verif {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button-solo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.button-solo__btn {
+    background-color: transparent;
+    border: 1px solid #756b62;
+    border-radius: 20px;
+    color: #756b62;
+    cursor: pointer;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+.footer {
+    background-image: url(../img/20.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center-text__text_footer {
+    font-size: 28px;
+    font-family: "CormorantInfant";
+    font-weight: 500;
+    color: #f1e9de;
+    margin-bottom: 10px;
+}
+
+.block-first {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 18px;
+    color: #9f968e;
+    margin-left: 300px;
+}
+
+.block-first p  {
+    margin-bottom: 10px;
+}
+
+.block-first p:last-child  {
+    margin-top: 30px;
+}
+
+.block-second {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 18px;
+    color: #9f968e;
+}
+
+.block-second p {
+    margin-top: 10px;
+}
+
+.block-second p:first-child {
+    margin-top: 25px;
+}
+
+.block-third {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: 350px;
+}
+
+.circle {
+    border: 1px solid #756b62;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.circle:last-child {
+    margin-right: 0;
+}
+
+
+.first__img {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.second__img {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 17px;
+    padding-bottom: 17px;
+    cursor: pointer;
+}
+
+.third__img {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 17px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 1570px){
+    *{
+        width: 100% !important;
+        padding: 0 20px;
+    }
+    .block-first{
+        margin-left: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        align-items: none;
+    }
+    .block-second{
+        margin-left: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .block-third{
+        margin-left: 0;
+        margin-right: 0px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    footer{
+        padding: 0 0;
+        margin-top: 9300px;
+    }
+    body{
+        padding: 0 0;
+    }
+    .form-left h2{
+        margin-left: 0 !important;
+        font-size: 40px;
+    }
+    .form-left p{
+        margin-left: 0 !important;
+    }
+    .form-right{
+        padding: 0 0 !important;
+    }
+    .type__label{
+        padding: 0 0 !important;
+    }
+    .verif .type__input{
+        width: 10px !important;
+    }
+    body .container .img .two_milo{
+        margin-top: 5500px;
+        position: absolute;
+        margin-left: 210px;
+        width: 600px !important;
+    }
+    body .container .img .three_milo{
+        margin-top: 6200px;
+        position: absolute;
+        margin-left: 210px;
+        width: 600px !important;
+    }
+    body .container .img .two_milo_ryka{
+        margin-top: 7000px;
+        position: absolute;
+        margin-left: 210px;
+        width: 600px !important;
+    }
+    body .container .img .three_milo_odealo{
+        margin-top: 7800px;
+        position: absolute;
+        margin-left: 210px;
+        width: 600px !important;
+    }
+    body .container .img .mnogo_milo{
+        margin-top: 8600px;
+        position: absolute;
+        margin-left: 210px;
+        width: 600px !important;
+    }
+    
+    body .container .img p{
+        margin-left: 320px !important;
+        margin-top: 5300px;
+    }
+    body .container .img .inst{
+        margin-left: -300px !important;
+        margin-top: 5300px;
+    }
+    body .container .img .email{
+        margin-left: 600px !important;
+        margin-top: 5300px;
+    }
+    body .container .sianie .fon{
+        font-size: 140px;
+        margin-left: -40px !important;
+        margin-top: 4200px;
+    }
+    body .container .sianie .lico{
+        margin-left: -40px !important;
+        margin-top: 4350px;
+    }
+    body .container .sianie .na_lice{
+        margin-left: -40px !important;
+        margin-top: 4550px;
+        font-size: 40px;
+    }
+    body .container .sianie button{
+        margin-left: 500px !important;
+        width: 200px !important;
+        margin-top: 4750px;
+    }
+    body .container .sostav .rostenie{
+        margin-left: 330px !important;
+        margin-top: 3300px;
+    }
+    body .container .sostav .petla{
+        margin-left: 330px !important;
+        margin-top: 3600px;
+    }
+    body .container .sostav .kniga{
+        margin-left: 330px  !important;
+        margin-top: 3900px;
+    }
+    body .container .sostav .rostenie_img{
+        margin-left: -50px !important;
+        margin-top: 3200px;
+    }
+    body .container .sostav .petla_img{
+        margin-left: -50px !important;
+        margin-top: 3520px;
+    }
+    body .container .sostav .kniga_img{
+        margin-left: -50px !important;
+        margin-top: 3820px;
+    }
+    body .container .history .line{
+        margin-left: 0 !important;
+        width: 50px !important;
+    }
+    body .container .history .line_text{
+        margin-left: 30px !important;
+    }
+    body .container .history h1{
+        margin-left: 0 !important;
+        font-size: 50px;
+        z-index: 1;
+    }
+    body .container .history p{
+        margin-left: 0 !important;
+        font-size: 35px;
+        margin-top: 2730px;
+        z-index: 1;
+    }
+    body .container .history .img_ryka_milo{
+        margin-left: 600px !important;
+        width: 450px !important;
+        margin-top: 2550px;
+    }
+    body .container .history .img_rosa{
+        margin-left: 900px !important;
+        width: 250px !important;
+        margin-top: 2720px;
+    }
+    body .container .history .img_maslo{
+        margin-left: 200px !important;
+        width: 200px !important;
+        margin-top: 3000px;
+    }
+    body .wrapper{
+        margin-left: 40px !important;
+        height: 930px !important;
+        margin-top: 1450px !important;
+        width: 900px !important;
+    }
+    body .container .line56{
+        margin-top: 1400px !important;
+    }
+    body .container .line57{
+        margin-top: 1410px !important;
+    }
+    body .controls label{
+        width: 8px !important;
+        margin-left: 20px !important;
+        padding: 0 0 !important;
+    }
+    body .wrapper .sliders i{
+        margin-left: 0 !important;
+        width: 16px !important;
+    }
+    body .line{
+        margin-left: 0 !important;
+        width: 50px !important;
+    }
+    body .line_text{
+        margin-left: 40px !important;
+    }
+    body .love h1{
+        margin-left: 100px !important;
+        font-size: 45px !important;
+    }
+    body .love .img_telo{
+        margin-left: 700px !important;
+        width: 250px !important;
+    }
+    header .logo{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    header .text{
+        margin-left: 0px !important;
+        margin-right: 0 !important;
+        padding: 0 5px !important;
+        font-size: 15px !important;
+    }
+    header .navigation{
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .text_1{
+        margin-left: 0px !important;
+    }
+    header .basket{
+        margin-left: 960px !important;
+        position: absolute;
+        margin-top: 40px !important;
+        padding: 0 0 !important;
+    }
+    header .img .img_milo{
+        margin-left: -180px !important;
+        width: 350px !important;
+    }
+    header .img h1{
+        margin-left: -160px !important;
+        font-size: 94px !important;
+    }
+    header .img .img_body{
+        margin-left: 310px !important;
+        margin-top: 300px !important;
+        width: 600px !important;
+    }
+    header .img .img_ryka{
+        margin-left: -150px !important;
+        width: 350px !important;
+        margin-top: 800px !important;
+    }
+    header .img .img_logo{
+        margin-left: 770px !important;
+        width: 200px !important;
+        margin-top: 890px !important;
+    }
+}
+@media (max-width: 1024px){
+    *{
+        width: 100% !important;
+        padding: 0 20px;
+    }
+    .block-first{
+        margin-left: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        align-items: none;
+    }
+    .block-second{
+        margin-left: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .block-third{
+        margin-left: 0;
+        margin-right: 0px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .footer__items{
+        flex-direction: column;
+    }
+    footer{
+        padding: 0 0;
+        margin-top: 9300px;
+    }
+    body{
+        padding: 0 0;
+    }
+    .circle{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .sides{
+        flex-direction: column;
+    }
+    .form-left h2{
+        margin-left: 0 !important;
+        font-size: 40px;
+    }
+    .form-left p{
+        margin-left: 0 !important;
+    }
+    .form-right{
+        padding: 0 0 !important;
+    }
+    .type__label{
+        padding: 0 0 !important;
+    }
+    .verif .type__input{
+        width: 10px !important;
+    }
+    body .img{
+        flex-direction: column !important;
+        position: relative;
+    }
+    body .container .img .two_milo{
+        margin-top: 5100px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    body .container .img .three_milo{
+        margin-top: 5900px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    body .container .img .two_milo_ryka{
+        margin-top: 6700px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    body .container .img .three_milo_odealo{
+        margin-top: 7500px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    body .container .img .mnogo_milo{
+        margin-top: 8300px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    body .container .img p{
+        margin-left: 220px !important;
+        margin-top: 5000px;
+    }
+    body .container .img .inst{
+        margin-left: -190px !important;
+        margin-top: 5000px;
+    }
+    body .container .img .email{
+        margin-left: 490px !important;
+        margin-top: 5000px;
+    }
+    body .container .sianie .fon{
+        font-size: 100px;
+        margin-left: -40px !important;
+        margin-top: 4200px;
+    }
+    body .container .sianie .lico{
+        margin-left: -40px !important;
+        margin-top: 4350px;
+    }
+    body .container .sianie .na_lice{
+        margin-left: -40px !important;
+        margin-top: 4450px;
+    }
+    body .container .sianie button{
+        margin-left: 300px !important;
+        width: 200px !important;
+        margin-top: 4750px;
+    }
+    body .container .sostav .rostenie{
+        margin-left: 170px !important;
+        margin-top: 3300px;
+    }
+    body .container .sostav .petla{
+        margin-left: 170px !important;
+        margin-top: 3600px;
+    }
+    body .container .sostav .kniga{
+        margin-left: 170px !important;
+        margin-top: 3900px;
+    }
+    body .container .sostav .rostenie_img{
+        margin-left: -50px !important;
+        margin-top: 3200px;
+    }
+    body .container .sostav .petla_img{
+        margin-left: -50px !important;
+        margin-top: 3520px;
+    }
+    body .container .sostav .kniga_img{
+        margin-left: -50px !important;
+        margin-top: 3820px;
+    }
+    body .container .history .line{
+        margin-left: 0 !important;
+        width: 50px !important;
+    }
+    body .container .history .line_text{
+        margin-left: 30px !important;
+    }
+    body .container .history h1{
+        margin-left: 0 !important;
+        font-size: 40px;
+        z-index: 1;
+    }
+    body .container .history p{
+        margin-left: 0 !important;
+        font-size: 30px;
+        margin-top: 2700px;
+        z-index: 1;
+    }
+    body .container .history .img_ryka_milo{
+        margin-left: 400px !important;
+        width: 350px !important;
+        margin-top: 2600px;
+    }
+    body .container .history .img_rosa{
+        margin-left: 630px !important;
+        width: 200px !important;
+        margin-top: 2720px;
+    }
+    body .container .history .img_maslo{
+        margin-left: 200px !important;
+        width: 200px !important;
+        margin-top: 3000px;
+    }
+    body .wrapper{
+        margin-left: -40px !important;
+        height: 930px !important;
+        margin-top: 1450px !important;
+    }
+    body .container .line56{
+        margin-top: 1400px !important;
+    }
+    body .container .line57{
+        margin-top: 1410px !important;
+    }
+    body .controls label{
+        width: 8px !important;
+        margin-left: 20px !important;
+        padding: 0 0 !important;
+    }
+    body .wrapper .sliders i{
+        margin-left: 0 !important;
+        width: 16px !important;
+    }
+    body .line{
+        margin-left: 0 !important;
+        width: 50px !important;
+    }
+    body .line_text{
+        margin-left: 40px !important;
+    }
+    body .love h1{
+        margin-left: 0 !important;
+        font-size: 45px !important;
+    }
+    body .love .img_telo{
+        margin-left: 600px !important;
+        width: 250px !important;
+    }
+    header .logo{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    header .text{
+        margin-left: 0px !important;
+        margin-right: 0 !important;
+        padding: 0 5px !important;
+        font-size: 15px !important;
+    }
+    header .navigation{
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .text_1{
+        margin-left: 0px !important;
+    }
+    header .basket{
+        margin-left: 810px !important;
+        position: absolute;
+        margin-top: 40px !important;
+        padding: 0 0 !important;
+    }
+    header .img .img_milo{
+        margin-left: -180px !important;
+        width: 350px !important;
+    }
+    header .img h1{
+        margin-left: -160px !important;
+        font-size: 84px !important;
+    }
+    header .img .img_body{
+        margin-left: 150px !important;
+        margin-top: 300px !important;
+        width: 600px !important;
+    }
+    header .img .img_ryka{
+        margin-left: -150px !important;
+        width: 350px !important;
+        margin-top: 800px !important;
+    }
+    header .img .img_logo{
+        margin-left: 550px !important;
+        width: 200px !important;
+        margin-top: 890px !important;
+    }
+}
+@media (max-width: 720px){
+    *{
+        width: 100% !important;
+        padding: 0 20px;
+    }
+    .block-first{
+        margin-left: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        align-items: none;
+    }
+    .block-second{
+        margin-left: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .block-third{
+        margin-left: 0;
+        margin-right: 0px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .footer__items{
+        flex-direction: column;
+    }
+    footer{
+        padding: 0 0;
+        margin-top: 7200px;
+    }
+    body{
+        padding: 0 0;
+    }
+    .circle{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .sides{
+        flex-direction: column;
+    }
+    .form-left h2{
+        margin-left: 0 !important;
+        font-size: 40px;
+    }
+    .form-left p{
+        margin-left: 0 !important;
+    }
+    .form-right{
+        padding: 0 0 !important;
+    }
+    .type__label{
+        padding: 0 0 !important;
+    }
+    .verif .type__input{
+        width: 10px !important;
+    }
+    body .img{
+        flex-direction: column !important;
+        position: relative;
+    }
+    body .container .img .two_milo{
+        margin-top: 4900px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    body .container .img .three_milo{
+        margin-top: 5350px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    body .container .img .two_milo_ryka{
+        margin-top: 5800px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    body .container .img .three_milo_odealo{
+        margin-top: 6250px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    body .container .img .mnogo_milo{
+        margin-top: 6700px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    body .container .img p{
+        margin-left: 40px !important;
+        margin-top: 4800px;
+    }
+    body .container .img .inst{
+        margin-left: -190px !important;
+        margin-top: 4800px;
+    }
+    body .container .img .email{
+        margin-left: 310px !important;
+        margin-top: 4800px;
+    }
+    body .container .sianie .fon{
+        font-size: 70px;
+        margin-left: -40px !important;
+        margin-top: 4200px;
+    }
+    body .container .sianie .lico{
+        margin-left: -40px !important;
+        margin-top: 4350px;
+    }
+    body .container .sianie .na_lice{
+        margin-left: -40px !important;
+        margin-top: 4450px;
+    }
+    body .container .sianie button{
+        margin-left: 130px !important;
+        width: 200px !important;
+        margin-top: 4550px;
+    }
+    body .container .sostav .rostenie{
+        margin-left: 0 !important;
+        margin-top: 3300px;
+    }
+    body .container .sostav .petla{
+        margin-left: 0 !important;
+        margin-top: 3600px;
+    }
+    body .container .sostav .kniga{
+        margin-left: 0 !important;
+        margin-top: 3900px;
+    }
+    body .container .sostav .rostenie_img{
+        margin-left: -50px !important;
+        margin-top: 3200px;
+    }
+    body .container .sostav .petla_img{
+        margin-left: -50px !important;
+        margin-top: 3520px;
+    }
+    body .container .sostav .kniga_img{
+        margin-left: -50px !important;
+        margin-top: 3820px;
+    }
+    body .container .history .line{
+        margin-left: 0 !important;
+        width: 50px !important;
+    }
+    body .container .history .line_text{
+        margin-left: 30px !important;
+    }
+    body .container .history h1{
+        margin-left: 0 !important;
+        font-size: 30px;
+        z-index: 1;
+    }
+    body .container .history p{
+        margin-left: 0 !important;
+        font-size: 25px;
+        margin-top: 2700px;
+        z-index: 1;
+    }
+    body .container .history .img_ryka_milo{
+        margin-left: 250px !important;
+        width: 250px !important;
+        margin-top: 2600px;
+    }
+    body .container .history .img_rosa{
+        margin-left: 400px !important;
+        width: 150px !important;
+        margin-top: 2680px;
+    }
+    body .container .history .img_maslo{
+        margin-left: 100px !important;
+        width: 150px !important;
+        margin-top: 2900px;
+    }
+    body .wrapper{
+        margin-left: -40px !important;
+    }
+    body .controls label{
+        width: 8px !important;
+        margin-left: 20px !important;
+        padding: 0 0 !important;
+    }
+    body .wrapper .sliders i{
+        margin-left: 0 !important;
+        width: 16px !important;
+    }
+    body .line{
+        margin-left: 0 !important;
+        width: 50px !important;
+    }
+    body .line_text{
+        margin-left: 40px !important;
+    }
+    body .love h1{
+        margin-left: 0 !important;
+        font-size: 25px !important;
+    }
+    body .love .img_telo{
+        margin-left: 300px !important;
+        width: 200px !important;
+    }
+    header .logo{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    header .text{
+        margin-left: 0px !important;
+        margin-right: 0 !important;
+        padding: 0 5px !important;
+        font-size: 15px !important;
+    }
+    header .navigation{
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .text_1{
+        margin-left: 0px !important;
+    }
+    header .basket{
+        margin-left: 0 !important;
+        position: absolute;
+        margin-top: 100px !important;
+        padding: 0 0 !important;
+    }
+    header .img .img_milo{
+        margin-left: -180px !important;
+        width: 250px !important;
+    }
+    header .img h1{
+        margin-left: -180px !important;
+        font-size: 64px !important;
+    }
+    header .img .img_body{
+        margin-left: 0 !important;
+        margin-top: 300px !important;
+    }
+    header .img .img_ryka{
+        margin-left: -150px !important;
+        width: 350px !important;
+        margin-top: 800px !important;
+    }
+    header .img .img_logo{
+        margin-left: 220px !important;
+        width: 200px !important;
+        margin-top: 670px !important;
+    }
+}
